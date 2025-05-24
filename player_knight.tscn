@@ -180,7 +180,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"HIT",
-"speed": 5.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -226,7 +226,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"ROLL",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -279,11 +279,12 @@ animations = [{
 }],
 "loop": true,
 "name": &"RUNNING",
-"speed": 5.0
+"speed": 7.0
 }]
 
 [node name="Player-Knight" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_frhvi")
-animation = &"DEATH"
+animation = &"RUNNING"
+frame_progress = 0.403329
