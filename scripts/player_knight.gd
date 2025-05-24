@@ -4,7 +4,9 @@ extends CharacterBody2D
 @export var walk_speed = 150
 @export var run_speed = 250
 var speed
-const JUMP_VELOCITY = -200.0
+const jump_force = -350.0
+@export_range(0,1) var jump_deceleration = 0.5
+
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
@@ -15,7 +17,11 @@ func _physics_process(delta: float) -> void:
 
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+		velocity.y = jump_force
+		
+	# Jump deceleration
+	if Input.is_action_just_released("jump") and velocity.y < 0:
+		velocity.y *= jump_deceleration
 		
 	# Input direction
 	var direction := Input.get_axis("go_left", "go_right")
