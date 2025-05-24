@@ -1,3 +1,17 @@
-[gd_scene load_steps=0 format=3 uid="uid://ct6t02bhqxlmf"]
+[gd_scene load_steps=3 format=3 uid="uid://ct6t02bhqxlmf"]
 
-[node name="PlatformerButBetterRoot" type="Node2D"]
+[ext_resource type="PackedScene" uid="uid://caijkuo28fk16" path="res://Scenes/player_knight.tscn" id="1_jjgbg"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jjgbg"]
+distance = 1.0
+
+[node name="main" type="Node2D"]
+
+[node name="Player-Knight" parent="." instance=ExtResource("1_jjgbg")]
+position = Vector2(389, 137)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(389, 183)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_jjgbg")
