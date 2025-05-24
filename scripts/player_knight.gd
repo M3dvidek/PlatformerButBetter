@@ -1,7 +1,9 @@
 extends CharacterBody2D
 
 
-const SPEED = 150
+@export var walk_speed = 150
+@export var run_speed = 250
+var speed
 const JUMP_VELOCITY = -200.0
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
@@ -18,6 +20,18 @@ func _physics_process(delta: float) -> void:
 	# Input direction
 	var direction := Input.get_axis("go_left", "go_right")
 	
+	# Run movement
+	if Input.is_action_pressed("run"):
+		speed = run_speed
+	else:
+		speed = walk_speed
+	
+	# Aplly movement
+	if direction:
+		velocity.x = direction * speed
+	else:
+		velocity.x = move_toward(velocity.x, 0, speed)
+		
 		# flip sprite
 	if direction < 0:
 		animated_sprite.flip_h = true
@@ -32,10 +46,5 @@ func _physics_process(delta: float) -> void:
 			animated_sprite.play("RUNNING")
 	else:
 		animated_sprite.play("FALLING_JUMP")
-	# Aplly movement
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+		
 	move_and_slide()
