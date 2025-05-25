@@ -303,6 +303,7 @@ height = 14.0
 script = ExtResource("1_vfrqp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 20
 position = Vector2(0, -5)
 sprite_frames = SubResource("SpriteFrames_frhvi")
 animation = &"RUNNING"
