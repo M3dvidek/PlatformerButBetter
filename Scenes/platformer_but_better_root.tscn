@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=3 uid="uid://ct6t02bhqxlmf"]
 
-[ext_resource type="PackedScene" uid="uid://kcc3hbr24ygh" path="res://player_knight.tscn" id="1_se3wx"]
-[ext_resource type="Texture2D" uid="uid://bfudcin2jw57w" path="res://assets/enviroment/SideView_Grass.png" id="2_64rck"]
-[ext_resource type="Texture2D" uid="uid://okxmas6do4v2" path="res://assets/enviroment/Tiles/Assets/Background_2.png" id="3_vapve"]
-[ext_resource type="Texture2D" uid="uid://b05khg4f8esg1" path="res://assets/enviroment/Tiles/Assets/Assets.png" id="4_25wdu"]
-[ext_resource type="PackedScene" uid="uid://yc31vciof100" path="res://Scenes/kill_zone2.tscn" id="5_25wdu"]
+[ext_resource type="Texture2D" uid="uid://bfudcin2jw57w" path="res://assets/enviroment/SideView_Grass.png" id="1_ndg56"]
+[ext_resource type="Texture2D" uid="uid://okxmas6do4v2" path="res://assets/enviroment/Tiles/Assets/Background_2.png" id="2_1joog"]
+[ext_resource type="Texture2D" uid="uid://b05khg4f8esg1" path="res://assets/enviroment/Tiles/Assets/Assets.png" id="3_g8pco"]
+[ext_resource type="PackedScene" uid="uid://caijkuo28fk16" path="res://Scenes/player_knight.tscn" id="4_gjtej"]
+[ext_resource type="PackedScene" uid="uid://yc31vciof100" path="res://Scenes/kill_zone2.tscn" id="5_yfgqj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3kwss"]
-texture = ExtResource("2_64rck")
+texture = ExtResource("1_ndg56")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -35,12 +35,12 @@ texture = ExtResource("2_64rck")
 3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e81u2"]
-texture = ExtResource("3_vapve")
+texture = ExtResource("2_1joog")
 0:0/size_in_atlas = Vector2i(31, 17)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16r6n"]
-texture = ExtResource("4_25wdu")
+texture = ExtResource("3_g8pco")
 2:0/0 = 0
 2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:0/0 = 0
@@ -371,7 +371,7 @@ layer_0/tile_data = PackedInt32Array(327667, 196612, 13, 393203, 196612, 13, 458
 layer_1/name = "world"
 layer_1/tile_data = PackedInt32Array(196595, 196612, 0, 196596, 196612, 0, 196597, 196612, 0, 196598, 196612, 0, 196599, 196612, 0, 196600, 196612, 0, 196601, 196612, 0, 196602, 196612, 0, 196603, 196612, 0, 196604, 196612, 0, 196605, 196612, 0, 131069, 196612, 0, 131070, 196612, 0, 131071, 196612, 0, 65536, 196612, 0, 65537, 196612, 0, 65538, 196612, 0, 65539, 196612, 0, 65540, 196612, 0, 65541, 196612, 0, 65542, 196612, 0, 65543, 196612, 0, 8, 1376260, 24, 9, 1376260, 24, 10, 1376260, 24, 11, 1376260, 24, 12, 1376260, 24, 13, 1376260, 24, 65549, 196612, 0, 65550, 196612, 0, 65551, 196612, 0, 65552, 196612, 0, 65553, 196612, 0, 65554, 196612, 0, 65555, 196612, 0, 65556, 196612, 0, 65557, 196612, 0, 65558, 196612, 0, 65559, 196612, 0, 65560, 196612, 0, 65561, 196612, 0, 65562, 196612, 0, 65563, 196612, 0, 65564, 196612, 0, 65565, 196612, 0, 65566, 196612, 0, 65567, 196612, 0, 131103, 196612, 0, 131104, 196612, 0, 131105, 196612, 0, 131106, 196612, 0, 131107, 196612, 0, 131108, 196612, 0, 65572, 196612, 0, 65573, 196612, 0, 65574, 196612, 0, 65575, 196612, 0, 39, 196612, 0, 40, 196612, 0, 41, 196612, 0, 42, 196612, 0, 43, 196612, 0, 44, 196612, 0, 45, 196612, 0, 46, 196612, 0, 47, 196612, 0, 48, 196612, 0, 19, 393220, 0, 0, 393220, 0, 131064, 393220, 0, 65570, 393220, 0, -196565, 196612, 0, -196566, 196612, 0, -196567, 196612, 0, -196568, 196612, 0, -196569, 196612, 0, -327649, 196612, 0, -327650, 196612, 0, -327651, 196612, 0, -327652, 196612, 0, -196573, 196612, 0, -196574, 196612, 0, -393193, 196612, 0, -393194, 196612, 0, -393195, 196612, 0, -327659, 196612, 0, -327662, 196612, 0, -327663, 196612, 0, -327664, 196612, 0, -393201, 196612, 0, -393202, 196612, 0, -327666, 196612, 0, -262130, 196612, 0, -262131, 196612, 0, -327665, 196612, 0, -327670, 196612, 0, -393207, 196612, 0, -393208, 196612, 0, -458750, 196612, 0, -393216, 196612, 0, -393215, 196612, 0, -327684, 196612, 0, -327685, 196612, 0, -327686, 196612, 0, -393222, 196612, 0, -393223, 196612, 0, -589826, 196612, 0, -655362, 196612, 0, -655361, 196612, 0, -720896, 196612, 0, -720895, 196612, 0, -720889, 196612, 0, -720888, 196612, 0, -655352, 196612, 0, -655351, 196612, 0, -655350, 196612, 0, -655345, 196612, 0, -655344, 196612, 0, -720880, 196612, 0, -720879, 196612, 0, -720878, 196612, 0, -720874, 196612, 0, -720873, 196612, 0, -720872, 196612, 0, -720871, 196612, 0, -655335, 196612, 0, -655334, 196612, 0, -589791, 196612, 0, -589790, 196612, 0, -589789, 196612, 0, -655325, 196612, 0, -655324, 196612, 0, -589784, 196612, 0, -589783, 196612, 0, -524247, 196612, 0, -524246, 196612, 0, -458710, 196612, 0, -458709, 196612, 0, -393214, 393220, 0, -327678, 1376260, 24)
 
-[node name="Player-Knight" parent="." instance=ExtResource("1_se3wx")]
+[node name="Player-Knight" parent="." instance=ExtResource("4_gjtej")]
 position = Vector2(91, 2)
 
 [node name="Camera2D" type="Camera2D" parent="Player-Knight"]
@@ -383,7 +383,7 @@ limit_bottom = 80
 limit_smoothed = true
 position_smoothing_enabled = true
 
-[node name="KillZone" parent="." instance=ExtResource("5_25wdu")]
+[node name="KillZone" parent="." instance=ExtResource("5_yfgqj")]
 position = Vector2(87, 131)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
