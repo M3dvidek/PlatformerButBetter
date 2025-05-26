@@ -300,6 +300,7 @@ radius = 4.0
 height = 14.0
 
 [node name="Player-Knight" type="CharacterBody2D"]
+z_index = 5
 script = ExtResource("1_vfrqp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
