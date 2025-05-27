@@ -51,6 +51,6 @@ func _physics_process(delta: float) -> void:
 		else:
 			animated_sprite.play("RUNNING")
 	else:
-		animated_sprite.play("FALLING_JUMP")
+		animated_sprite.play("IDLE")
 		
 	move_and_slide()
