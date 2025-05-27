@@ -28,3 +28,4 @@ git push origin main
 - [ ] more characters with diferent abilities
 - [ ] saves
 - [ ] quests
+- [x] Kill zone
