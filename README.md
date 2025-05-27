@@ -6,9 +6,9 @@ git clone https://github.com/M3dvidek/PlatformerButBetter.git
 ```
 ### Commiting changes
 ``` bash
+git pull # origin main is optional, it doesn't override your work but in case of conflict you need to merge (viz. Documentation)
 git add .
 git commit -m "Please write a short description of changes you made"
-git pull origin main  # be aware that git pull can override yor changes if you didn't commit them
 git push origin main
 ```
 ## Roadmap/To-Do
