@@ -54,3 +54,11 @@ func _physics_process(delta: float) -> void:
 		animated_sprite.play("IDLE")
 		
 	move_and_slide()
+	
+func die():
+		animated_sprite.play("HIT") #temporary
+		set_physics_process(false)
+		
+func _on_animated_sprite_2d_animation_finished():
+	if animated_sprite.animation == "HIT":
+		animated_sprite.play("DEATH")
