@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyvh1cp1krm80"
-path="res://.godot/imported/BlueWizardDash_00000.png-b8bf22e32e81152780f916d533171033.ctex"
+path="res://.godot/imported/BlueWizardDash_00000.png-90f01211829e7309415aa024405da661.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/some_new_stuff/BlueWizard Animations/BlueWizard/2BlueWizardJump/DashEffect/BlueWizardDash_00000.png"
-dest_files=["res://.godot/imported/BlueWizardDash_00000.png-b8bf22e32e81152780f916d533171033.ctex"]
+source_file="res://assets/some_new_stuff/BlueWizard Animations/BlueWizard/2BlueWizardJump/DashEffect/BlueWizardDash_00000.png"
+dest_files=["res://.godot/imported/BlueWizardDash_00000.png-90f01211829e7309415aa024405da661.ctex"]
 
 [params]
 

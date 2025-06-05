@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgo4a4hwxo01i"
-path="res://.godot/imported/PlantPosion_00015.png-0a9f73c170d2bd2f8f8d2e7b1f7a9463.ctex"
+path="res://.godot/imported/PlantPosion_00015.png-ea542deca69f0d59ed61d358def74e45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/some_new_stuff/Plant Animations/Plant 8 Poison/PlantPosion_00015.png"
-dest_files=["res://.godot/imported/PlantPosion_00015.png-0a9f73c170d2bd2f8f8d2e7b1f7a9463.ctex"]
+source_file="res://assets/some_new_stuff/Plant Animations/Plant 8 Poison/PlantPosion_00015.png"
+dest_files=["res://.godot/imported/PlantPosion_00015.png-ea542deca69f0d59ed61d358def74e45.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kh6njueigw2u"
-path="res://.godot/imported/terrain_top_left_inner.png-ba22eb3e07c27ec2bc7b163e97127dc2.ctex"
+path="res://.godot/imported/terrain_top_left_inner.png-16af1fa142ba528952dc3162b42f8780.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/enviroment/Grasslands Tileset/PNG/terrain_top_left_inner.png"
-dest_files=["res://.godot/imported/terrain_top_left_inner.png-ba22eb3e07c27ec2bc7b163e97127dc2.ctex"]
+source_file="res://assets/enviroment/Grasslands Tileset/PNG/terrain_top_left_inner.png"
+dest_files=["res://.godot/imported/terrain_top_left_inner.png-16af1fa142ba528952dc3162b42f8780.ctex"]
 
 [params]
 

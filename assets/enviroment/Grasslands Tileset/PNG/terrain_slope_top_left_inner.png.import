@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cackpaglweg1i"
-path="res://.godot/imported/terrain_slope_top_left_inner.png-796d7f27f8a4aad5eb785361943e1041.ctex"
+path="res://.godot/imported/terrain_slope_top_left_inner.png-ea10a667854fd9e339efd94126fd2591.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/enviroment/Grasslands Tileset/PNG/terrain_slope_top_left_inner.png"
-dest_files=["res://.godot/imported/terrain_slope_top_left_inner.png-796d7f27f8a4aad5eb785361943e1041.ctex"]
+source_file="res://assets/enviroment/Grasslands Tileset/PNG/terrain_slope_top_left_inner.png"
+dest_files=["res://.godot/imported/terrain_slope_top_left_inner.png-ea10a667854fd9e339efd94126fd2591.ctex"]
 
 [params]
 

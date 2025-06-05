@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4kva1ajr043s"
-path="res://.godot/imported/SNES - Super Mario World - Object Enemies & Hazards.png-a75c4b533a9e890e4fc60381d7914718.ctex"
+path="res://.godot/imported/SNES - Super Mario World - Object Enemies & Hazards.png-e78c03446d8029369e6c9fd709f4041f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/enemies/rock/SNES - Super Mario World - Object Enemies & Hazards.png"
-dest_files=["res://.godot/imported/SNES - Super Mario World - Object Enemies & Hazards.png-a75c4b533a9e890e4fc60381d7914718.ctex"]
+source_file="res://assets/enemies/rock/SNES - Super Mario World - Object Enemies & Hazards.png"
+dest_files=["res://.godot/imported/SNES - Super Mario World - Object Enemies & Hazards.png-e78c03446d8029369e6c9fd709f4041f.ctex"]
 
 [params]
 

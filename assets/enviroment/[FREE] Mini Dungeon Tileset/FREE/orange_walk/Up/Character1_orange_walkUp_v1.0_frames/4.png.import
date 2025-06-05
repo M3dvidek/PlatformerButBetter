@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjm17bn6j3uip"
-path="res://.godot/imported/4.png-f98ca9ece5b238e513f342d64feed02e.ctex"
+path="res://.godot/imported/4.png-838f78f25196398ac6d61285b43a3d64.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/enviroment/[FREE] Mini Dungeon Tileset/FREE/orange_walk/Up/Character1_orange_walkUp_v1.0_frames/4.png"
-dest_files=["res://.godot/imported/4.png-f98ca9ece5b238e513f342d64feed02e.ctex"]
+source_file="res://assets/enviroment/[FREE] Mini Dungeon Tileset/FREE/orange_walk/Up/Character1_orange_walkUp_v1.0_frames/4.png"
+dest_files=["res://.godot/imported/4.png-838f78f25196398ac6d61285b43a3d64.ctex"]
 
 [params]
 

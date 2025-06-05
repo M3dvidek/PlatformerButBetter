@@ -1,8 +1,8 @@
-[gd_scene load_steps=16 format=3 uid="uid://dxusalye8my3h"]
+[gd_scene load_steps=19 format=3 uid="uid://dxusalye8my3h"]
 
-[ext_resource type="Texture2D" uid="uid://bfudcin2jw57w" path="res://Assets/enviroment/SideView_Grass.png" id="1_ndg56"]
-[ext_resource type="Texture2D" uid="uid://okxmas6do4v2" path="res://Assets/enviroment/Tiles/Assets/Background_2.png" id="2_1joog"]
-[ext_resource type="Texture2D" uid="uid://b05khg4f8esg1" path="res://Assets/enviroment/Tiles/Assets/Assets.png" id="3_g8pco"]
+[ext_resource type="Texture2D" uid="uid://bfudcin2jw57w" path="res://assets/enviroment/SideView_Grass.png" id="1_ndg56"]
+[ext_resource type="Texture2D" uid="uid://okxmas6do4v2" path="res://assets/enviroment/Tiles/Assets/Background_2.png" id="2_1joog"]
+[ext_resource type="Texture2D" uid="uid://b05khg4f8esg1" path="res://assets/enviroment/Tiles/Assets/Assets.png" id="3_g8pco"]
 [ext_resource type="PackedScene" uid="uid://caijkuo28fk16" path="res://Scenes/player_knight.tscn" id="4_gjtej"]
 [ext_resource type="PackedScene" uid="uid://bd75vrp134apf" path="res://Scenes/kill_zone.tscn" id="5_yfgqj"]
 [ext_resource type="PackedScene" uid="uid://bhigh48xytelt" path="res://Scenes/platform_light.tscn" id="6_1joog"]
@@ -420,6 +420,43 @@ _data = {
 &"move": SubResource("Animation_g8pco")
 }
 
+[sub_resource type="Animation" id="Animation_yfgqj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(570, -88)]
+}
+
+[sub_resource type="Animation" id="Animation_gjtej"]
+resource_name = "move"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.966667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(570, -88), Vector2(496, -88)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5kd3m"]
+_data = {
+&"RESET": SubResource("Animation_yfgqj"),
+&"move": SubResource("Animation_gjtej")
+}
+
 [node name="PlatformerButBetterRoot" type="Node2D"]
 position = Vector2(198, -80)
 
@@ -448,6 +485,7 @@ position_smoothing_enabled = true
 
 [node name="KillZone" parent="." instance=ExtResource("5_yfgqj")]
 position = Vector2(87, 131)
+script = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
 position = Vector2(0, 2)
@@ -467,6 +505,12 @@ autoplay = "move"
 [node name="platformLight2" parent="Platforms" instance=ExtResource("6_1joog")]
 position = Vector2(570, -88)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platformLight2"]
+libraries = {
+&"": SubResource("AnimationLibrary_5kd3m")
+}
+autoplay = "move"
+
 [node name="platformLight3" parent="Platforms" instance=ExtResource("6_1joog")]
 position = Vector2(636, -123)
 
@@ -477,3 +521,13 @@ position = Vector2(252, -86)
 
 [node name="Enemy_rock" parent="Enemies" instance=ExtResource("7_g8pco")]
 position = Vector2(185, -83)
+
+[node name="texts" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="texts"]
+offset_left = 51.0
+offset_top = -112.0
+offset_right = 192.0
+offset_bottom = -85.0
+theme_override_font_sizes/font_size = 9
+text = "This is a spike that will kill you ↓"

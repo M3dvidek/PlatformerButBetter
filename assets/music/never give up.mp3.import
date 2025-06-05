@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://c6w4cx4r7ktph"
-path="res://.godot/imported/never give up.mp3-8870d17056e9696d8f4d999da9e030a5.mp3str"
+path="res://.godot/imported/never give up.mp3-774536d2db4db51740fd2b9d33eb0109.mp3str"
 
 [deps]
 
-source_file="res://Assets/music/never give up.mp3"
-dest_files=["res://.godot/imported/never give up.mp3-8870d17056e9696d8f4d999da9e030a5.mp3str"]
+source_file="res://assets/music/never give up.mp3"
+dest_files=["res://.godot/imported/never give up.mp3-774536d2db4db51740fd2b9d33eb0109.mp3str"]
 
 [params]
 

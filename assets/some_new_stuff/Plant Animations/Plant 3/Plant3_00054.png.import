@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byb3p5bolfvcy"
-path="res://.godot/imported/Plant3_00054.png-cf5f31c9e9a04a5a3a4e0cefe6243235.ctex"
+path="res://.godot/imported/Plant3_00054.png-a6a7f0071ed8d19cb06c0c42bfba6814.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/some_new_stuff/Plant Animations/Plant 3/Plant3_00054.png"
-dest_files=["res://.godot/imported/Plant3_00054.png-cf5f31c9e9a04a5a3a4e0cefe6243235.ctex"]
+source_file="res://assets/some_new_stuff/Plant Animations/Plant 3/Plant3_00054.png"
+dest_files=["res://.godot/imported/Plant3_00054.png-a6a7f0071ed8d19cb06c0c42bfba6814.ctex"]
 
 [params]
 

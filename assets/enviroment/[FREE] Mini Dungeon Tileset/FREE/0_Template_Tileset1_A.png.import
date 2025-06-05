@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://82q87ufduyr1"
-path="res://.godot/imported/0_Template_Tileset1_A.png-663c6f946d4e4bdc7183e20dd75b62bd.ctex"
+path="res://.godot/imported/0_Template_Tileset1_A.png-c266874f170663ce8a76d9d00b9df268.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/enviroment/[FREE] Mini Dungeon Tileset/FREE/0_Template_Tileset1_A.png"
-dest_files=["res://.godot/imported/0_Template_Tileset1_A.png-663c6f946d4e4bdc7183e20dd75b62bd.ctex"]
+source_file="res://assets/enviroment/[FREE] Mini Dungeon Tileset/FREE/0_Template_Tileset1_A.png"
+dest_files=["res://.godot/imported/0_Template_Tileset1_A.png-c266874f170663ce8a76d9d00b9df268.ctex"]
 
 [params]
 

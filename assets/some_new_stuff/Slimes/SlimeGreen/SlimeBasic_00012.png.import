@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx5uu06227fuw"
-path="res://.godot/imported/SlimeBasic_00012.png-1ccdd5e7e01d2fa6336c2d45f282a131.ctex"
+path="res://.godot/imported/SlimeBasic_00012.png-97eb71da3b84647a87bc0f0892255d0a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/some_new_stuff/Slimes/SlimeGreen/SlimeBasic_00012.png"
-dest_files=["res://.godot/imported/SlimeBasic_00012.png-1ccdd5e7e01d2fa6336c2d45f282a131.ctex"]
+source_file="res://assets/some_new_stuff/Slimes/SlimeGreen/SlimeBasic_00012.png"
+dest_files=["res://.godot/imported/SlimeBasic_00012.png-97eb71da3b84647a87bc0f0892255d0a.ctex"]
 
 [params]
 

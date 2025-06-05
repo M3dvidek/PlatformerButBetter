@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo828bfd2nrod"
-path="res://.godot/imported/shadows_A_center.png-09a8de5b3d413ab49eeab55b1698d26d.ctex"
+path="res://.godot/imported/shadows_A_center.png-55ec3c47271dc95fba24bd247f35eedd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/enviroment/Grasslands Tileset/PNG/shadows_A_center.png"
-dest_files=["res://.godot/imported/shadows_A_center.png-09a8de5b3d413ab49eeab55b1698d26d.ctex"]
+source_file="res://assets/enviroment/Grasslands Tileset/PNG/shadows_A_center.png"
+dest_files=["res://.godot/imported/shadows_A_center.png-55ec3c47271dc95fba24bd247f35eedd.ctex"]
 
 [params]
 

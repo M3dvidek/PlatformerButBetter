@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dypo4emgs75mb"
-path="res://.godot/imported/spritesheet.png-d758f8e0168fe6a4417a80d98e7d377a.ctex"
+path="res://.godot/imported/spritesheet.png-44aa8bcf6aac34d24caeadb448e8cd6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/enviroment/Grasslands Tileset/spritesheet/spritesheet.png"
-dest_files=["res://.godot/imported/spritesheet.png-d758f8e0168fe6a4417a80d98e7d377a.ctex"]
+source_file="res://assets/enviroment/Grasslands Tileset/spritesheet/spritesheet.png"
+dest_files=["res://.godot/imported/spritesheet.png-44aa8bcf6aac34d24caeadb448e8cd6c.ctex"]
 
 [params]
 
