@@ -8,7 +8,7 @@ func _on_body_entered(body: Node2D) -> void:
 	if (body.name == "Player-Knight" && timer.time_left == 0):
 		print("You died") # Replace with function body.
 		body.die()
-		await get_tree().create_timer(1.7).timeout
+		await get_tree().create_timer(0.9).timeout
 		audio_stream_player_2d.play()
 		timer.start()
 

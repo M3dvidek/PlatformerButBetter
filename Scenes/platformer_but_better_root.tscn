@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dxusalye8my3h"]
+[gd_scene load_steps=20 format=3 uid="uid://dxusalye8my3h"]
 
 [ext_resource type="Texture2D" uid="uid://bfudcin2jw57w" path="res://assets/enviroment/SideView_Grass.png" id="1_ndg56"]
 [ext_resource type="Texture2D" uid="uid://okxmas6do4v2" path="res://assets/enviroment/Tiles/Assets/Background_2.png" id="2_1joog"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bd75vrp134apf" path="res://Scenes/kill_zone.tscn" id="5_yfgqj"]
 [ext_resource type="PackedScene" uid="uid://bhigh48xytelt" path="res://Scenes/platform_light.tscn" id="6_1joog"]
 [ext_resource type="PackedScene" uid="uid://ygahu5k1mb2u" path="res://Scenes/enemies/rock.tscn" id="7_g8pco"]
+[ext_resource type="FontFile" uid="uid://nv8037y0i30i" path="res://assets/fonts/EduSAHand-SemiBold.ttf" id="8_gjtej"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3kwss"]
 texture = ExtResource("1_ndg56")
@@ -522,12 +523,43 @@ position = Vector2(252, -86)
 [node name="Enemy_rock" parent="Enemies" instance=ExtResource("7_g8pco")]
 position = Vector2(185, -83)
 
-[node name="texts" type="Node" parent="."]
+[node name="tutorial_texts" type="Node" parent="."]
 
-[node name="Label" type="Label" parent="texts"]
-offset_left = 51.0
-offset_top = -112.0
-offset_right = 192.0
-offset_bottom = -85.0
+[node name="spike" type="Label" parent="tutorial_texts"]
+offset_left = 122.0
+offset_top = -125.0
+offset_right = 263.0
+offset_bottom = -90.5
+theme_override_fonts/font = ExtResource("8_gjtej")
 theme_override_font_sizes/font_size = 9
-text = "This is a spike that will kill you ↓"
+text = "This is a spike that will kill you 
+                               ↓"
+
+[node name="textures" type="Label" parent="tutorial_texts"]
+offset_left = 20.0
+offset_top = -145.0
+offset_right = 161.0
+offset_bottom = -110.5
+theme_override_fonts/font = ExtResource("8_gjtej")
+theme_override_font_sizes/font_size = 9
+text = "some things are just textures
+              ↓"
+
+[node name="platform_jump" type="Label" parent="tutorial_texts"]
+offset_left = 273.0
+offset_top = -89.0
+offset_right = 427.0
+offset_bottom = -54.5
+theme_override_fonts/font = ExtResource("8_gjtej")
+theme_override_font_sizes/font_size = 9
+text = "	←  You can jump through platforms"
+
+[node name="platfotm_movement" type="Label" parent="tutorial_texts"]
+offset_left = 442.0
+offset_top = -161.0
+offset_right = 596.0
+offset_bottom = -108.5
+theme_override_fonts/font = ExtResource("8_gjtej")
+theme_override_font_sizes/font_size = 9
+text = "They can also move
+"
