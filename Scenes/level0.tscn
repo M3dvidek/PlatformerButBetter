@@ -1,16 +1,17 @@
-[gd_scene load_steps=20 format=3 uid="uid://dxusalye8my3h"]
+[gd_scene load_steps=22 format=3 uid="uid://dxusalye8my3h"]
 
-[ext_resource type="Texture2D" uid="uid://bfudcin2jw57w" path="res://assets/enviroment/SideView_Grass.png" id="1_ndg56"]
-[ext_resource type="Texture2D" uid="uid://okxmas6do4v2" path="res://assets/enviroment/Tiles/Assets/Background_2.png" id="2_1joog"]
-[ext_resource type="Texture2D" uid="uid://b05khg4f8esg1" path="res://assets/enviroment/Tiles/Assets/Assets.png" id="3_g8pco"]
-[ext_resource type="PackedScene" uid="uid://caijkuo28fk16" path="res://Scenes/player_knight.tscn" id="4_gjtej"]
-[ext_resource type="PackedScene" uid="uid://bd75vrp134apf" path="res://Scenes/kill_zone.tscn" id="5_yfgqj"]
-[ext_resource type="PackedScene" uid="uid://bhigh48xytelt" path="res://Scenes/platform_light.tscn" id="6_1joog"]
-[ext_resource type="PackedScene" uid="uid://ygahu5k1mb2u" path="res://Scenes/enemies/rock.tscn" id="7_g8pco"]
-[ext_resource type="FontFile" uid="uid://nv8037y0i30i" path="res://assets/fonts/EduSAHand-SemiBold.ttf" id="8_gjtej"]
+[ext_resource type="Texture2D" uid="uid://bfudcin2jw57w" path="res://assets/enviroment/SideView_Grass.png" id="1_y4o00"]
+[ext_resource type="Texture2D" uid="uid://okxmas6do4v2" path="res://assets/enviroment/Tiles/Assets/Background_2.png" id="2_v84nj"]
+[ext_resource type="Texture2D" uid="uid://b05khg4f8esg1" path="res://assets/enviroment/Tiles/Assets/Assets.png" id="3_uralf"]
+[ext_resource type="PackedScene" uid="uid://caijkuo28fk16" path="res://Scenes/player_knight.tscn" id="4_svu7w"]
+[ext_resource type="PackedScene" uid="uid://bd75vrp134apf" path="res://Scenes/kill_zone.tscn" id="5_vvhe0"]
+[ext_resource type="PackedScene" uid="uid://bhigh48xytelt" path="res://Scenes/platform_light.tscn" id="6_ek5eg"]
+[ext_resource type="PackedScene" uid="uid://ygahu5k1mb2u" path="res://Scenes/enemies/rock.tscn" id="7_kf8fq"]
+[ext_resource type="FontFile" uid="uid://nv8037y0i30i" path="res://assets/fonts/EduSAHand-SemiBold.ttf" id="8_mauxt"]
+[ext_resource type="PackedScene" uid="uid://b7ssqu8yskcio" path="res://Scenes/nextlevel.tscn" id="9_ms07d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3kwss"]
-texture = ExtResource("1_ndg56")
+texture = ExtResource("1_y4o00")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -38,12 +39,12 @@ texture = ExtResource("1_ndg56")
 3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e81u2"]
-texture = ExtResource("2_1joog")
+texture = ExtResource("2_v84nj")
 0:0/size_in_atlas = Vector2i(31, 17)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_16r6n"]
-texture = ExtResource("3_g8pco")
+texture = ExtResource("3_uralf")
 2:0/0 = 0
 2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:0/0 = 0
@@ -458,7 +459,10 @@ _data = {
 &"move": SubResource("Animation_gjtej")
 }
 
-[node name="PlatformerButBetterRoot" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_el1p2"]
+size = Vector2(28, 20)
+
+[node name="Level0" type="Node2D"]
 position = Vector2(198, -80)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -472,8 +476,8 @@ layer_1/tile_data = PackedInt32Array(131070, 393220, 0, 196595, 196612, 0, 19659
 layer_2/name = "Decorations"
 layer_2/tile_data = PackedInt32Array(-327673, 589828, 3, -262137, 589828, 4, -196601, 589828, 5, -327672, 655364, 3, -196600, 655364, 5, -327671, 720900, 3, -262135, 720900, 4, -196599, 720900, 5, -327670, 786436, 3, -262134, 786436, 4, -196598, 786436, 5, -65507, 589828, 3, 29, 589828, 4, 65565, 589828, 5, -65506, 655364, 3, 65566, 655364, 5, -65505, 720900, 3, 31, 720900, 4, 65567, 720900, 5, -65504, 786436, 3, 32, 786436, 4, 65568, 786436, 5, -524299, 655364, 7, -524300, 655364, 7)
 
-[node name="Player-Knight" parent="." instance=ExtResource("4_gjtej")]
-position = Vector2(-89, 20)
+[node name="Player-Knight" parent="." instance=ExtResource("4_svu7w")]
+position = Vector2(-169, 21)
 
 [node name="Camera2D" type="Camera2D" parent="Player-Knight"]
 position = Vector2(3, 1)
@@ -484,7 +488,7 @@ limit_bottom = 80
 limit_smoothed = true
 position_smoothing_enabled = true
 
-[node name="KillZone" parent="." instance=ExtResource("5_yfgqj")]
+[node name="KillZone" parent="." instance=ExtResource("5_vvhe0")]
 position = Vector2(87, 131)
 script = null
 
@@ -494,7 +498,7 @@ shape = SubResource("WorldBoundaryShape2D_e81u2")
 
 [node name="Platforms" type="Node" parent="."]
 
-[node name="platformLight" parent="Platforms" instance=ExtResource("6_1joog")]
+[node name="platformLight" parent="Platforms" instance=ExtResource("6_ek5eg")]
 position = Vector2(435, -109)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platformLight"]
@@ -503,7 +507,7 @@ libraries = {
 }
 autoplay = "move"
 
-[node name="platformLight2" parent="Platforms" instance=ExtResource("6_1joog")]
+[node name="platformLight2" parent="Platforms" instance=ExtResource("6_ek5eg")]
 position = Vector2(570, -88)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platformLight2"]
@@ -512,15 +516,15 @@ libraries = {
 }
 autoplay = "move"
 
-[node name="platformLight3" parent="Platforms" instance=ExtResource("6_1joog")]
+[node name="platformLight3" parent="Platforms" instance=ExtResource("6_ek5eg")]
 position = Vector2(636, -123)
 
-[node name="platformLight4" parent="Platforms" instance=ExtResource("6_1joog")]
+[node name="platformLight4" parent="Platforms" instance=ExtResource("6_ek5eg")]
 position = Vector2(252, -86)
 
 [node name="Enemies" type="Node" parent="."]
 
-[node name="Enemy_rock" parent="Enemies" instance=ExtResource("7_g8pco")]
+[node name="Enemy_rock" parent="Enemies" instance=ExtResource("7_kf8fq")]
 position = Vector2(185, -83)
 
 [node name="tutorial_texts" type="Node" parent="."]
@@ -530,17 +534,27 @@ offset_left = 122.0
 offset_top = -125.0
 offset_right = 263.0
 offset_bottom = -90.5
-theme_override_fonts/font = ExtResource("8_gjtej")
+theme_override_fonts/font = ExtResource("8_mauxt")
 theme_override_font_sizes/font_size = 9
 text = "This is a spike that will kill you 
                                ↓"
+
+[node name="next_level" type="Label" parent="tutorial_texts"]
+offset_left = 27.0
+offset_top = -269.0
+offset_right = 168.0
+offset_bottom = -234.5
+theme_override_fonts/font = ExtResource("8_mauxt")
+theme_override_font_sizes/font_size = 9
+text = "You can acces next level here
+↓"
 
 [node name="textures" type="Label" parent="tutorial_texts"]
 offset_left = 20.0
 offset_top = -145.0
 offset_right = 161.0
 offset_bottom = -110.5
-theme_override_fonts/font = ExtResource("8_gjtej")
+theme_override_fonts/font = ExtResource("8_mauxt")
 theme_override_font_sizes/font_size = 9
 text = "some things are just textures
               ↓"
@@ -550,7 +564,7 @@ offset_left = 273.0
 offset_top = -89.0
 offset_right = 427.0
 offset_bottom = -54.5
-theme_override_fonts/font = ExtResource("8_gjtej")
+theme_override_fonts/font = ExtResource("8_mauxt")
 theme_override_font_sizes/font_size = 9
 text = "	←  You can jump through platforms"
 
@@ -559,7 +573,14 @@ offset_left = 442.0
 offset_top = -161.0
 offset_right = 596.0
 offset_bottom = -108.5
-theme_override_fonts/font = ExtResource("8_gjtej")
+theme_override_fonts/font = ExtResource("8_mauxt")
 theme_override_font_sizes/font_size = 9
 text = "They can also move
 "
+
+[node name="nextlevel" parent="." instance=ExtResource("9_ms07d")]
+position = Vector2(120, -50)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nextlevel"]
+position = Vector2(-288, -103)
+shape = SubResource("RectangleShape2D_el1p2")

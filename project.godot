@@ -21,6 +21,10 @@ window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 window/stretch/scale_mode="integer"
 
+[global_group]
+
+Player=""
+
 [gui]
 
 theme/custom_font="uid://nv8037y0i30i"

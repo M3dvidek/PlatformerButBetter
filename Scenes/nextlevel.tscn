@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7ssqu8yskcio"]
+
+[ext_resource type="Script" uid="uid://df4jny32xnpr" path="res://scripts/nextlevel.gd" id="1_fwv21"]
+
+[node name="nextlevel" type="Area2D"]
+collision_mask = 255
+script = ExtResource("1_fwv21")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
