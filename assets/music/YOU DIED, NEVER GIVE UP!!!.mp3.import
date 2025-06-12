@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://b4idfoceafsov"
-path="res://.godot/imported/YOU DIED, NEVER GIVE UP!!!.mp3-0d669e670cd4957e106ee0478c9363be.mp3str"
+path="res://.godot/imported/YOU DIED, NEVER GIVE UP!!!.mp3-176dbb270c403139b1df6935aa1737e1.mp3str"
 
 [deps]
 
-source_file="res://assets/music/YOU DIED, NEVER GIVE UP!!!.mp3"
-dest_files=["res://.godot/imported/YOU DIED, NEVER GIVE UP!!!.mp3-0d669e670cd4957e106ee0478c9363be.mp3str"]
+source_file="res://Assets/music/YOU DIED, NEVER GIVE UP!!!.mp3"
+dest_files=["res://.godot/imported/YOU DIED, NEVER GIVE UP!!!.mp3-176dbb270c403139b1df6935aa1737e1.mp3str"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://nv8037y0i30i"
-path="res://.godot/imported/EduSAHand-SemiBold.ttf-ce89914379059e27a1af18c529157a82.fontdata"
+path="res://.godot/imported/EduSAHand-SemiBold.ttf-3a3d68589a6fb2e1eecd244d093ad69a.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/EduSAHand-SemiBold.ttf"
-dest_files=["res://.godot/imported/EduSAHand-SemiBold.ttf-ce89914379059e27a1af18c529157a82.fontdata"]
+source_file="res://Assets/fonts/EduSAHand-SemiBold.ttf"
+dest_files=["res://.godot/imported/EduSAHand-SemiBold.ttf-3a3d68589a6fb2e1eecd244d093ad69a.fontdata"]
 
 [params]
 

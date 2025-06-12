@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4j6k8ddfdgcv"
-path="res://.godot/imported/layer0.PNG-c02c0043c8e39ccf110e05280a8e5628.ctex"
+path="res://.godot/imported/layer0.PNG-ac41c447042c18981ce76d9c78b4d5d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enviroment/RiverParallaxBackground3840x2160/IndividualsLayers/layer0.PNG"
-dest_files=["res://.godot/imported/layer0.PNG-c02c0043c8e39ccf110e05280a8e5628.ctex"]
+source_file="res://Assets/enviroment/RiverParallaxBackground3840x2160/IndividualsLayers/layer0.PNG"
+dest_files=["res://.godot/imported/layer0.PNG-ac41c447042c18981ce76d9c78b4d5d3.ctex"]
 
 [params]
 

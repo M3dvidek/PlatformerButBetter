@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt3ypiqknxalw"
-path="res://.godot/imported/Rune.png-2a4dbba28230627c95e21a42d513a018.ctex"
+path="res://.godot/imported/Rune.png-09e1c01d6a00d934d5fb9e59c0e22a9d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enviroment/free-swamp-game-tileset-pixel-art/4 Animated objects/Rune.png"
-dest_files=["res://.godot/imported/Rune.png-2a4dbba28230627c95e21a42d513a018.ctex"]
+source_file="res://Assets/enviroment/free-swamp-game-tileset-pixel-art/4 Animated objects/Rune.png"
+dest_files=["res://.godot/imported/Rune.png-09e1c01d6a00d934d5fb9e59c0e22a9d.ctex"]
 
 [params]
 

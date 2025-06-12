@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bd75vrp134apf"]
 
-[ext_resource type="Script" uid="uid://cwknf1hgji75m" path="res://scripts/kill_zone.gd" id="1_byrjq"]
-[ext_resource type="AudioStream" uid="uid://b4idfoceafsov" path="res://assets/music/YOU DIED, NEVER GIVE UP!!!.mp3" id="2_un4jb"]
+[ext_resource type="Script" uid="uid://cr08vqvdeuqvi" path="res://scripts/kill_zone.gd" id="1_byrjq"]
+[ext_resource type="AudioStream" uid="uid://b4idfoceafsov" path="res://Assets/music/YOU DIED, NEVER GIVE UP!!!.mp3" id="2_un4jb"]
 
 [node name="KillZone" type="Area2D"]
 collision_mask = 255

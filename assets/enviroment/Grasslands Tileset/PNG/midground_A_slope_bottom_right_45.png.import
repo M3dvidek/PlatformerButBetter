@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cp8w7qvtq7wr6"
-path="res://.godot/imported/midground_A_slope_bottom_right_45.png-4249b5546ca13de9c2aaeb15b4077ca4.ctex"
+path="res://.godot/imported/midground_A_slope_bottom_right_45.png-c596ffbd636ba6253e36c89c27b35972.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enviroment/Grasslands Tileset/PNG/midground_A_slope_bottom_right_45.png"
-dest_files=["res://.godot/imported/midground_A_slope_bottom_right_45.png-4249b5546ca13de9c2aaeb15b4077ca4.ctex"]
+source_file="res://Assets/enviroment/Grasslands Tileset/PNG/midground_A_slope_bottom_right_45.png"
+dest_files=["res://.godot/imported/midground_A_slope_bottom_right_45.png-c596ffbd636ba6253e36c89c27b35972.ctex"]
 
 [params]
 

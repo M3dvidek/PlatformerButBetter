@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csx4td0mm3aa4"
-path="res://.godot/imported/CharaWizardJump_00007.png-16b713696ee5a0f5d2eb59f2a647ed3a.ctex"
+path="res://.godot/imported/CharaWizardJump_00007.png-9d4dbdd1fd93ab389be4cd43a40b203e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/some_new_stuff/BlueWizard Animations/BlueWizard/2BlueWizardJump/CharaWizardJump_00007.png"
-dest_files=["res://.godot/imported/CharaWizardJump_00007.png-16b713696ee5a0f5d2eb59f2a647ed3a.ctex"]
+source_file="res://Assets/some_new_stuff/BlueWizard Animations/BlueWizard/2BlueWizardJump/CharaWizardJump_00007.png"
+dest_files=["res://.godot/imported/CharaWizardJump_00007.png-9d4dbdd1fd93ab389be4cd43a40b203e.ctex"]
 
 [params]
 

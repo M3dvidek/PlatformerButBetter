@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2lxgtowe47el"
-path="res://.godot/imported/Background.png-06e688150d93900528f453d5ad94d0e2.ctex"
+path="res://.godot/imported/Background.png-98e7a3b1505da83b25258a6b287f767b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enviroment/free-swamp-game-tileset-pixel-art/2 Background/Background.png"
-dest_files=["res://.godot/imported/Background.png-06e688150d93900528f453d5ad94d0e2.ctex"]
+source_file="res://Assets/enviroment/free-swamp-game-tileset-pixel-art/2 Background/Background.png"
+dest_files=["res://.godot/imported/Background.png-98e7a3b1505da83b25258a6b287f767b.ctex"]
 
 [params]
 

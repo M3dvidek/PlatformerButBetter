@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="PlatformerButBetter"
-run/main_scene="uid://dxusalye8my3h"
+run/main_scene="uid://buiey4auui1fb"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 

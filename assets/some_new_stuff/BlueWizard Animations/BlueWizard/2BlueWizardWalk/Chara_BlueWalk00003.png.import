@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsar0ymw7jq3q"
-path="res://.godot/imported/Chara_BlueWalk00003.png-121423ded4ba1e4b1c4578f5579fd6a9.ctex"
+path="res://.godot/imported/Chara_BlueWalk00003.png-662f8823f6df7a7496ed7feb98a1ef86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/some_new_stuff/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00003.png"
-dest_files=["res://.godot/imported/Chara_BlueWalk00003.png-121423ded4ba1e4b1c4578f5579fd6a9.ctex"]
+source_file="res://Assets/some_new_stuff/BlueWizard Animations/BlueWizard/2BlueWizardWalk/Chara_BlueWalk00003.png"
+dest_files=["res://.godot/imported/Chara_BlueWalk00003.png-662f8823f6df7a7496ed7feb98a1ef86.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcyqmitl26ici"
-path="res://.godot/imported/JumpPlant_00003.png-d446ed11e9bae3c68664de364900d8d5.ctex"
+path="res://.godot/imported/JumpPlant_00003.png-439cde6e7f8d976b118fddfc8430d191.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/some_new_stuff/Plant Animations/PlantJump/JumpPlant_00003.png"
-dest_files=["res://.godot/imported/JumpPlant_00003.png-d446ed11e9bae3c68664de364900d8d5.ctex"]
+source_file="res://Assets/some_new_stuff/Plant Animations/PlantJump/JumpPlant_00003.png"
+dest_files=["res://.godot/imported/JumpPlant_00003.png-439cde6e7f8d976b118fddfc8430d191.ctex"]
 
 [params]
 

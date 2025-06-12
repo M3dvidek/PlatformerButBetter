@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6xa6j0tbbr0b"
-path="res://.godot/imported/Chest.png-5493cd28f3c82198db0430741716d657.ctex"
+path="res://.godot/imported/Chest.png-05040f0ff88fa7bcd208f07af988e343.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enviroment/free-swamp-game-tileset-pixel-art/4 Animated objects/Chest.png"
-dest_files=["res://.godot/imported/Chest.png-5493cd28f3c82198db0430741716d657.ctex"]
+source_file="res://Assets/enviroment/free-swamp-game-tileset-pixel-art/4 Animated objects/Chest.png"
+dest_files=["res://.godot/imported/Chest.png-05040f0ff88fa7bcd208f07af988e343.ctex"]
 
 [params]
 

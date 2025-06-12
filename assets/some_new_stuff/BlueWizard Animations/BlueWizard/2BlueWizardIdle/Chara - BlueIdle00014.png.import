@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tgauwjwdd2g3"
-path="res://.godot/imported/Chara - BlueIdle00014.png-c5f34edeb10cfb34a2b1a112a68df794.ctex"
+path="res://.godot/imported/Chara - BlueIdle00014.png-e404c3f20e076b3954aacbed2aa4bfdc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/some_new_stuff/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00014.png"
-dest_files=["res://.godot/imported/Chara - BlueIdle00014.png-c5f34edeb10cfb34a2b1a112a68df794.ctex"]
+source_file="res://Assets/some_new_stuff/BlueWizard Animations/BlueWizard/2BlueWizardIdle/Chara - BlueIdle00014.png"
+dest_files=["res://.godot/imported/Chara - BlueIdle00014.png-e404c3f20e076b3954aacbed2aa4bfdc.ctex"]
 
 [params]
 

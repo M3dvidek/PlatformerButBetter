@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm6ftmxxn0ni1"
-path="res://.godot/imported/Plant Wind 1_00022.png-44c12249f5589ecb5a62635f7d90365e.ctex"
+path="res://.godot/imported/Plant Wind 1_00022.png-694280bb23f277839e2e21a4ee459e75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/some_new_stuff/Plant Animations/Plant Wind 1/Plant Wind 1_00022.png"
-dest_files=["res://.godot/imported/Plant Wind 1_00022.png-44c12249f5589ecb5a62635f7d90365e.ctex"]
+source_file="res://Assets/some_new_stuff/Plant Animations/Plant Wind 1/Plant Wind 1_00022.png"
+dest_files=["res://.godot/imported/Plant Wind 1_00022.png-694280bb23f277839e2e21a4ee459e75.ctex"]
 
 [params]
 
