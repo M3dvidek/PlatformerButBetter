@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://buiey4auui1fb"]
+[gd_scene load_steps=22 format=3 uid="uid://buiey4auui1fb"]
 
 [ext_resource type="Texture2D" uid="uid://bfudcin2jw57w" path="res://Assets/enviroment/SideView_Grass.png" id="1_y4o00"]
 [ext_resource type="Texture2D" uid="uid://okxmas6do4v2" path="res://Assets/enviroment/Tiles/Assets/Background_2.png" id="2_v84nj"]
@@ -6,10 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://caijkuo28fk16" path="res://Scenes/player_knight.tscn" id="4_svu7w"]
 [ext_resource type="PackedScene" uid="uid://bd75vrp134apf" path="res://Scenes/kill_zone.tscn" id="5_vvhe0"]
 [ext_resource type="PackedScene" uid="uid://bhigh48xytelt" path="res://Scenes/platform_light.tscn" id="6_ek5eg"]
-[ext_resource type="Script" uid="uid://cr08vqvdeuqvi" path="res://Scripts/kill_zone.gd" id="6_v84nj"]
 [ext_resource type="PackedScene" uid="uid://ygahu5k1mb2u" path="res://Scenes/enemies/rock.tscn" id="7_kf8fq"]
 [ext_resource type="FontFile" uid="uid://nv8037y0i30i" path="res://Assets/fonts/EduSAHand-SemiBold.ttf" id="8_mauxt"]
-[ext_resource type="PackedScene" path="res://Scenes/nextlevel.tscn" id="9_ms07d"]
+[ext_resource type="PackedScene" uid="uid://b7ssqu8yskcio" path="res://Scenes/nextlevel.tscn" id="9_ms07d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3kwss"]
 texture = ExtResource("1_y4o00")
@@ -491,7 +490,6 @@ position_smoothing_enabled = true
 
 [node name="KillZone" parent="." instance=ExtResource("5_vvhe0")]
 position = Vector2(87, 131)
-script = ExtResource("6_v84nj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
 position = Vector2(0, 2)

@@ -1,43 +1,55 @@
-[gd_scene load_steps=7 format=3 uid="uid://ygahu5k1mb2u"]
+[gd_scene load_steps=9 format=3 uid="uid://ygahu5k1mb2u"]
 
 [ext_resource type="Texture2D" uid="uid://c4kva1ajr043s" path="res://Assets/enemies/rock/SNES - Super Mario World - Object Enemies & Hazards.png" id="1_nxd70"]
 [ext_resource type="PackedScene" uid="uid://bd75vrp134apf" path="res://Scenes/kill_zone.tscn" id="2_2wm4k"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wm4k"]
+atlas = ExtResource("1_nxd70")
+region = Rect2(8, 168, 24, 32)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_t7cjq"]
 atlas = ExtResource("1_nxd70")
-region = Rect2(172, 168, 4, 8)
+region = Rect2(40, 168, 24, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_inrie"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_inrie"]
+atlas = ExtResource("1_nxd70")
+region = Rect2(72, 168, 24, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2radv"]
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_2wm4k")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_t7cjq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_inrie")
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 7.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3xc0u"]
-size = Vector2(4, 8)
+size = Vector2(16, 22)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wtanh"]
-size = Vector2(8, 11)
+size = Vector2(18, 24)
 
 [node name="Enemy_rock" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -1)
-sprite_frames = SubResource("SpriteFrames_inrie")
-frame_progress = 0.451356
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_2radv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_3xc0u")
+metadata/_edit_group_ = true
 
 [node name="KillZone" parent="." instance=ExtResource("2_2wm4k")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
-position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_wtanh")
 one_way_collision_margin = 0.0
