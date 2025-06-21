@@ -1,15 +1,16 @@
-[gd_scene load_steps=9 format=3 uid="uid://ygahu5k1mb2u"]
+[gd_scene load_steps=13 format=3 uid="uid://ygahu5k1mb2u"]
 
+[ext_resource type="Script" uid="uid://bhfykceimixq0" path="res://Scripts/rock.gd" id="1_2wm4k"]
 [ext_resource type="Texture2D" uid="uid://c4kva1ajr043s" path="res://Assets/enemies/rock/SNES - Super Mario World - Object Enemies & Hazards.png" id="1_nxd70"]
 [ext_resource type="PackedScene" uid="uid://bd75vrp134apf" path="res://Scenes/kill_zone.tscn" id="2_2wm4k"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2wm4k"]
-atlas = ExtResource("1_nxd70")
-region = Rect2(8, 168, 24, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t7cjq"]
 atlas = ExtResource("1_nxd70")
 region = Rect2(40, 168, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wm4k"]
+atlas = ExtResource("1_nxd70")
+region = Rect2(8, 168, 24, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_inrie"]
 atlas = ExtResource("1_nxd70")
@@ -19,16 +20,26 @@ region = Rect2(72, 168, 24, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2wm4k")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_t7cjq")
+}],
+"loop": true,
+"name": &"!!!",
+"speed": 7.0
 }, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2wm4k")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}, {
+"frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_inrie")
 }],
 "loop": true,
-"name": &"default",
+"name": &"movement",
 "speed": 7.0
 }]
 
@@ -38,11 +49,22 @@ size = Vector2(16, 22)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wtanh"]
 size = Vector2(18, 24)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_nxd70"]
+radius = 64.195
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3xc0u"]
+radius = 104.307
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2wm4k"]
+size = Vector2(16.5, 22.5)
+
 [node name="Enemy_rock" type="CharacterBody2D"]
+script = ExtResource("1_2wm4k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.7, 0.7)
 sprite_frames = SubResource("SpriteFrames_2radv")
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_3xc0u")
@@ -53,3 +75,25 @@ metadata/_edit_group_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
 shape = SubResource("RectangleShape2D_wtanh")
 one_way_collision_margin = 0.0
+
+[node name="MovmentArea" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MovmentArea"]
+shape = SubResource("CircleShape2D_nxd70")
+
+[node name="!!!" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="!!!"]
+shape = SubResource("CircleShape2D_3xc0u")
+
+[node name="Brake" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Brake"]
+shape = SubResource("RectangleShape2D_2wm4k")
+
+[connection signal="body_entered" from="MovmentArea" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="!!!" to="." method="_on__body_entered"]
+[connection signal="body_exited" from="!!!" to="." method="_on__body_exited"]
+[connection signal="body_entered" from="Brake" to="." method="_on_brake_body_entered"]

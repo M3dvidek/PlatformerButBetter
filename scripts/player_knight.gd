@@ -36,7 +36,7 @@ func _physics_process(delta: float) -> void:
 	
 	# Aplly movement
 		if direction:
-			velocity.x = direction * speed
+			velocity.x = direction * speed 
 		else:
 			velocity.x = move_toward(velocity.x, 0, speed)
 			
